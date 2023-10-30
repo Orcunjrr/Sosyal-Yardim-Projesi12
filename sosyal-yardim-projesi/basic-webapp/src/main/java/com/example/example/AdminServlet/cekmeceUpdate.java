@@ -1,0 +1,85 @@
+package com.example.example.AdminServlet;
+
+import com.example.example.DataBase.cekmece;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet(name = "cekmeceUpdate", value = "/adminpanel/cekmeceUpdate")
+public class cekmeceUpdate extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Diğer form verilerini alın
+        String cekmeceIdParam = request.getParameter("cekmeceId");
+        if (cekmeceIdParam != null) {
+            int cekmeceId = Integer.parseInt(cekmeceIdParam);
+            String cekmeceAdi = request.getParameter("cekmeceAdi");
+            String durum = request.getParameter("durum");
+            
+            try {
+                // Hibernate session'ı yapılandırması
+                StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+                        .configure()
+                        .build();
+                SessionFactory sessionFactory = new MetadataSources(registry)
+                        .buildMetadata()
+                        .buildSessionFactory();
+// 2. Session oluşturun
+                Session session = sessionFactory.openSession();
+// İşlemleri gerçekleştirin
+                Transaction transaction = session.beginTransaction();
+                
+                // Get the existing cekmece object from the database
+                cekmece Cekmece = session.get(cekmece.class, cekmeceId);
+
+                // Update the fields with new values
+                Cekmece.setCekmeceAdi(cekmeceAdi);
+                Cekmece.setDurum(durum);
+                
+                // Update the existing record with the new data
+                session.merge(Cekmece);
+                transaction.commit();
+
+                session.close();
+                sessionFactory.close();
+
+                response.sendRedirect("./cekmecetanim.jsp");
+            } catch (Exception e) {
+                System.err.println("Hata oluştu: " + e);
+                e.printStackTrace();
+                response.sendRedirect("./error.jsp");
+            }
+        } else {
+        	response.sendRedirect("./error.jsp");
+           
+        }
+    }
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // doGet işlemleri
+        // Örneğin, cekmeceId'yi alarak ilgili sayfayı yönlendirebilirsiniz.
+        String cekmeceIdParam = request.getParameter("cekmeceId");
+        if (cekmeceIdParam != null && !cekmeceIdParam.isEmpty()) {
+            int cekmeceId = Integer.parseInt(cekmeceIdParam);
+            
+            response.sendRedirect("./cekmecetanim.jsp");
+        } else {
+            // Hata durumunda yapılacak işlemler veya hata mesajı
+            // Örneğin, uygun bir hata sayfasına yönlendirebilirsiniz.
+            
+        }
+    }
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\Administrator\Desktop\sosyalyardim\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2686896457.index
+\basic-webapp\src\main\java
+C:\Users\Administrator\Desktop\sosyalyardim\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3933536308.index
+\basic-webapp\src\main\java

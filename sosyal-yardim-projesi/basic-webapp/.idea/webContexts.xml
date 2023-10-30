@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/MuracaatGirisi.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/0MuracaatListe/TutanakEkle.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel/0MuracaatListe" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/AileYakinliklari.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/Askerhükümlügiris.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/MuracatListesic.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/aileyakinlik.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/asevilist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/bolgegiris.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/bolgetanimlama.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/durumtanim.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/egitimbilgilerilist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/engelliaraclist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/engelligiris.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/engellilist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/engellitipduzenle.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/engellitiptanim.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/kullaniciduzenle.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/kullaniciliste.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/muracaatliste.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/okullist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/stokgir.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/tutanaklist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/yardimkarari.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/yardimkararlist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/yonkurum.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+      </map>
+    </option>
+  </component>
+</project>
